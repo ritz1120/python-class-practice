@@ -22,13 +22,13 @@ if level>20 and diamonds>100:
 else:
     print("grind more")
 #pizza billing system
-print("menu:vegpizza=120,chickenpizza=180,extracheese=+40")
+print("menu:veg pizza=120,chicken pizza=180,extra cheese=+40")
 pizza=input("select pizza")
 cheese=input("cheese option")
 vegpizza=120
 chickenpizza=180
 extracheese=+40
-if pizza==vegpizza and cheese==extracheese:
+if pizza=="veg pizza" and cheese=="extra cheese":
     print("160")
 elif pizza=="chicken pizza" and cheese=="extra cheese":
     print("220")

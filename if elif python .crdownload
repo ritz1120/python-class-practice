@@ -1,0 +1,37 @@
+#number trap
+number=int(input("enter a number"))
+if number%2<1 and number%3<1:
+           print("code master")
+elif number%2<1:
+    print("even energy")
+elif number%3<1:
+    print("odd wizard")
+else:
+    print("NPC number")
+#get money as input
+money=int(input("enter money"))
+if money>40:
+          print("return balance")
+elif money==40:
+    print("enjoy juice")
+elif money<40:
+    print("not enough money")
+#python keyword challenge
+word=input("enter a word")
+if word=="if" or word=="else" or word=="while" or word=="for":
+    print("valid")
+else:
+    print("invalid")
+#whatsapp last seen checker
+lastseen=int(input("last seen hours"))
+reply=input("yes/no")
+if lastseen<1 and reply=="no":
+             print("ghosting")
+elif lastseen==0 and reply=="yes":
+    print("available")
+elif lastseen>24:
+    print("busy")
+            
+    
+    
+           

@@ -1,0 +1,53 @@
+#BMI
+a=int(input("weight"))
+b=int(input("height"))
+c=(b/100)**2
+print(a/c)      
+
+#to find last digit
+a=int(input("enter value"))
+print(a%10)
+
+#to remove last digit
+a=int(input("enter value"))
+print(a//10)
+
+a=int(input("enter value"))
+print(a%100)
+
+#vol of cuboid
+a=int(input("enter height"))
+b=int(input("enter breadth"))
+c=int(input("enter length"))
+print("volume of cuboid=",a*b*c)
+
+#vol of cylinder
+a=int(input("enter height"))
+b=int(input("enter radius"))
+print("volume of cylinder=",3.14*(b**2)*a)
+
+#expand the number
+a=int(input("enter value"))
+th=(a//1000)*1000
+print(th)
+h=((a//100)%10)*100
+print(h)
+t=((a//10)%10)*10
+print(t)
+o=a%10
+print(o)
+
+#squaring middle digit
+a=int(input("enter 5 digit number"))
+b=((a//100)%10)**2
+print(b)
+
+# numbers
+a=int(input("enter value"))
+b=int(input("enter value"))
+print(a>b)
+print(a<b)
+print(a<=b)
+print(a>=b)
+print(a==b)
+print(a!=b)

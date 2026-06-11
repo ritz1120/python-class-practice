@@ -1,0 +1,94 @@
+#string concatenation
+a=input()
+b=input()
+print(a+b)
+#type casting
+a=int(input())
+b=int(input())
+print(a+b)
+print(type(a+b))
+#arithmetic operators
+a=10
+b=28
+print("addition",a+b)
+print("subtraction",a-b)
+print("multiplication",a*b)
+print("floor division",a/b)
+print("remainder",a%b)
+print("integer division",a//b)
+print("exponentiation",a**b)
+#assignment operators
+n=8
+print(n)
+n+=9
+print(n)
+a=30
+a**=9
+print(a)
+#comparison operators
+height1=180
+height2=153
+print(height1==height2)
+print(height1!=height2)
+print(height1>height2)
+print(height1<height2)
+print(height1<=height2)
+print(height1>=height2)
+#logical operators
+a=50
+print(a>29 and a<220)
+print(a>30 or a<10)
+print(not(a<100 and a>51))
+#special operators
+#identity operators
+a=["butterscotch","mango"]
+b=["butterscotch","mango"]
+c=a
+print(a is c)
+print(a is b)
+print(b is c)
+print(a==b)
+#membership operators
+a=["chocolate","mango"]
+print("strawberry" in a)
+print("strawberry" not in a)
+#bitwise operators
+a=40
+b=9
+print(a&b)
+print(a|b)
+print(a^b)
+print(~a)
+
+a=10
+print(a<<4)
+a=30
+print(a>>3) 
+
+
+
+                                                                                                         
+
+
+
+
+
+
+    
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+

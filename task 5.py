@@ -1,0 +1,56 @@
+from tkinter import *
+from tkinter.ttk import Combobox
+import tkinter as tk
+main=tk.Tk()
+main.geometry('1000x1000')
+main.title('PythonGuides')
+main.config(bg="light pink")
+n=Label(main,font=20,fg='black',bg='white',text="Enter Name").place(x=100,y=50)
+e=Label(main,font=20,fg='black',bg='white',text="Enter Email").place(x=100,y=120)
+c=Label(main,font=20,fg='black',bg='white',text="Contact Number").place(x=100,y=180)
+g=Label(main,font=20,fg='black',bg='white',text="Select Gender").place(x=100,y=250)
+p=Label(main,font=20,fg='black',bg='white',text="Select Country").place(x=100,y=320)
+pwd=Label(main,font=20,fg='black',bg='white',text="Enter Password").place(x=100,y=380)
+r=Label(main,font=20,fg='black',bg='white',text="Re Enter Pasword").place(x=100,y=450)
+def show():
+    name=ne.get()
+    email=e.get()
+    contact=c.get()
+    re=r.get()
+    password=pe.get()
+    place=places.get()
+    gen=gender.get()
+    print("Name:",name)
+    print("Email:",gen)
+    print("Contact Number:",contact)
+    print("gender:",gen)
+    print("country:",place)
+    print("Password:",password)
+    
+ne=Entry(main)
+ne.place(x=400,y=50)
+pe=Entry(main,show="*")
+pe.place(x=400,y=380)
+places=Combobox(main)
+places["values"]=("select","paris","london","dubai","qatar","vietnam","singapore","malaysia","thailand")
+places.current(0)
+places.place(x=400,y=320)
+c=Entry(main)
+c.place(x=400,y=180)
+r=Entry(main,show="*")
+r.place(x=400,y=450)
+e=Entry(main)
+e.place(x=400,y=120)
+
+Button(main,text='Register',command=show).place(x=400,y=550)
+
+gender=StringVar(value="Female")
+rb=Radiobutton(main,text="Female",variable=gender,value="Female")
+rb.place(x=400,y=250)
+rb1=Radiobutton(main,text="Male",variable=gender,value="Male")
+rb1.place(x=500,y=250)
+rb2=Radiobutton(main,text="Others",variable=gender,value="Others")
+rb2.place(x=600,y=250)
+
+
+         
